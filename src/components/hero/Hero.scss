@@ -1,0 +1,80 @@
+/* Hero.scss */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #0b0742, #120d59);
+    color: #fff;
+    padding-bottom: 150px;
+    padding-left: 7rem; /* Add specific margin to the left */
+    padding-right: 5rem; /* Add specific margin to the right */
+    padding-top: 70px;
+
+    .hero-curve {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    
+        .curve-svg {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+  
+    .hero-content {
+        max-width: 50%;
+        text-align: left; /* Ensures text alignment is to the left */
+        margin-left: 0;  /* Aligns content to the left edge */      
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+  
+      p {
+        margin: 1rem 0;
+        line-height: 1.5;
+        color: #ccc;
+      }
+  
+      .btn {
+        padding: 0.8rem 1.5rem;
+        background-color: #00d1ff;
+        color: #fff;
+        border: none;
+        border-radius: 0px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #00b5e2;
+        }
+      }
+    }
+  
+    .hero-image {
+      position: relative;
+  
+      img {
+        max-width: 85%;
+        animation: float 3s ease-in-out infinite;
+      }
+  
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    }
+  }
+  

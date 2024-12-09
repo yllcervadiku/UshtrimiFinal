@@ -1,0 +1,93 @@
+.testimonial-slider {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+  
+      span {
+        color: #1fa0f2;
+      }
+    }
+  
+    &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    &__card {
+      flex: 0 0 45%; /* Cards take 45% of the container width */
+      margin: 0 10px;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.5s ease-in-out;
+  
+      &.visible {
+        opacity: 1;
+        transform: scale(1);
+      }
+  
+      &.hidden {
+        display: none; /* Hide the hidden cards completely */
+      }
+  
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    &__image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      object-fit: cover;
+    }
+  
+    &__name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+    &__position {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+  
+    &__text {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
+    }
+  
+    &__controls {
+      margin-top: 20px;
+  
+      button {
+        background-color: #1fa0f2;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: background-color 0.3s ease-in-out;
+  
+        &:hover {
+          background-color: #0c6fa6;
+        }
+      }
+    }
+  }
+  
